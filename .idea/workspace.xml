@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="61bd7307-d576-4d6d-8efb-a8bb257f5d4a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DiaryApp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/models/Diary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/models/Entry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/repositories/DiaryNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/repositories/DiaryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/repositories/DiaryRepositoryImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/repositories/EntryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/repositories/EntryRepositoryImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/repositories/UsernameExistException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/DiaryRepositoryImpTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2dfL5gPUorekBM0895BwKBs7hTP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/DELL/IdeaProjects/DiaryApp/src/Main.java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="data.repositories" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\DELL\IdeaProjects\DiaryApp" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.DiaryRepositoryImpTest">
+    <configuration name="DiaryRepositoryImpTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DiaryApp" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DiaryRepositoryImpTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiaryRepositoryImpTest.testDeleteDiaryByUsernameThatDoesNotExistDiaryThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DiaryApp" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DiaryRepositoryImpTest" />
+      <option name="METHOD_NAME" value="testDeleteDiaryByUsernameThatDoesNotExistDiaryThrowException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiaryRepositoryImpTest.testDeleteRepositoryThatDoesNotExistInTheRepositoryDiaryThrowsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DiaryApp" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DiaryRepositoryImpTest" />
+      <option name="METHOD_NAME" value="testDeleteRepositoryThatDoesNotExistInTheRepositoryDiaryThrowsException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiaryRepositoryImpTest.testThatRepositoryCanFindListOfDiary" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DiaryApp" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DiaryRepositoryImpTest" />
+      <option name="METHOD_NAME" value="testThatRepositoryCanFindListOfDiary" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiaryRepositoryImpTest.testThatRepositorycanDeleteDiaryByUsername" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DiaryApp" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DiaryRepositoryImpTest" />
+      <option name="METHOD_NAME" value="testThatRepositorycanDeleteDiaryByUsername" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.DiaryRepositoryImpTest" />
+        <item itemvalue="JUnit.DiaryRepositoryImpTest.testThatRepositoryCanFindListOfDiary" />
+        <item itemvalue="JUnit.DiaryRepositoryImpTest.testDeleteRepositoryThatDoesNotExistInTheRepositoryDiaryThrowsException" />
+        <item itemvalue="JUnit.DiaryRepositoryImpTest.testDeleteDiaryByUsernameThatDoesNotExistDiaryThrowException" />
+        <item itemvalue="JUnit.DiaryRepositoryImpTest.testThatRepositorycanDeleteDiaryByUsername" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="61bd7307-d576-4d6d-8efb-a8bb257f5d4a" name="Changes" comment="" />
+      <created>1710394010238</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1710394010238</updated>
+      <workItem from="1710394011292" duration="4662000" />
+      <workItem from="1710401640473" duration="9971000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
