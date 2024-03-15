@@ -1,8 +1,8 @@
 import data.models.Diary;
-import data.repositories.DiaryNotFoundException;
+import exceptions.DiaryNotFoundException;
 import data.repositories.DiaryRepository;
 import data.repositories.DiaryRepositoryImp;
-import data.repositories.UsernameExistException;
+import exceptions.UsernameExistException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -130,7 +130,30 @@ public class DiaryRepositoryImpTest {
         expectedDiaries.add(diary1);
         expectedDiaries.add(diary3);
         expectedDiaries.add(diary5);
-        assertEquals(expectedDiaries, repository.findAll(diary1, diary3, diary5));
+        assertEquals(expectedDiaries, repository.findSome(diary1, diary3, diary5));
+
+    }
+
+    @Test
+    public void testThatRepositoryCanFindAllDiaries(){
+        Diary diary1 = new Diary("username1", "password");
+        Diary diary2 = new Diary("username2", "password");
+        Diary diary3 = new Diary("username3", "password");
+        Diary diary4 = new Diary("username4", "password");
+        Diary diary5 = new Diary("username5", "password");
+        repository.save(diary1);
+        repository.save(diary2);
+        repository.save(diary3);
+        repository.save(diary4);
+        repository.save(diary5);
+        assertEquals(5l, repository.count());
+        List<Diary> expectedDiaries = new ArrayList<>();
+        expectedDiaries.add(diary1);
+        expectedDiaries.add(diary2);
+        expectedDiaries.add(diary3);
+        expectedDiaries.add(diary4);
+        expectedDiaries.add(diary5);
+        assertEquals(expectedDiaries, repository.findAll());
 
     }
 }

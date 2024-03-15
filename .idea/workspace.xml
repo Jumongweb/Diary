@@ -5,23 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61bd7307-d576-4d6d-8efb-a8bb257f5d4a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DiaryApp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/models/Diary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/models/Entry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/repositories/DiaryNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/repositories/DiaryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/repositories/DiaryRepositoryImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/repositories/EntryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/repositories/EntryRepositoryImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/repositories/UsernameExistException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/DiaryRepositoryImpTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dtos/requests/RegisterRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/DiaryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/DiaryServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/EntryRepositoryImpTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/repositories/DiaryNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exceptions/DiaryNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/repositories/DiaryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repositories/DiaryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/repositories/DiaryRepositoryImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repositories/DiaryRepositoryImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/repositories/UsernameExistException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exceptions/UsernameExistException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/DiaryRepositoryImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/DiaryRepositoryImpTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +56,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/DELL/IdeaProjects/DiaryApp/src/Main.java&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -84,21 +79,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DiaryRepositoryImpTest.testDeleteDiaryByUsernameThatDoesNotExistDiaryThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DiaryApp" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DiaryRepositoryImpTest" />
-      <option name="METHOD_NAME" value="testDeleteDiaryByUsernameThatDoesNotExistDiaryThrowException" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DiaryRepositoryImpTest.testDeleteRepositoryThatDoesNotExistInTheRepositoryDiaryThrowsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DiaryApp" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="DiaryRepositoryImpTest" />
       <option name="METHOD_NAME" value="testDeleteRepositoryThatDoesNotExistInTheRepositoryDiaryThrowsException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiaryRepositoryImpTest.testThatIhaveRepositoryThatCanStoreDiariesAndItIsEmptyByDefault" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DiaryApp" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DiaryRepositoryImpTest" />
+      <option name="METHOD_NAME" value="testThatIhaveRepositoryThatCanStoreDiariesAndItIsEmptyByDefault" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiaryRepositoryImpTest.testThatRepositoryCanFindAllDiaries" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DiaryApp" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DiaryRepositoryImpTest" />
+      <option name="METHOD_NAME" value="testThatRepositoryCanFindAllDiaries" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -114,23 +119,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DiaryRepositoryImpTest.testThatRepositorycanDeleteDiaryByUsername" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DiaryApp" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DiaryRepositoryImpTest" />
-      <option name="METHOD_NAME" value="testThatRepositorycanDeleteDiaryByUsername" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.DiaryRepositoryImpTest" />
+        <item itemvalue="JUnit.DiaryRepositoryImpTest.testThatRepositoryCanFindAllDiaries" />
+        <item itemvalue="JUnit.DiaryRepositoryImpTest.testThatIhaveRepositoryThatCanStoreDiariesAndItIsEmptyByDefault" />
         <item itemvalue="JUnit.DiaryRepositoryImpTest.testThatRepositoryCanFindListOfDiary" />
         <item itemvalue="JUnit.DiaryRepositoryImpTest.testDeleteRepositoryThatDoesNotExistInTheRepositoryDiaryThrowsException" />
-        <item itemvalue="JUnit.DiaryRepositoryImpTest.testDeleteDiaryByUsernameThatDoesNotExistDiaryThrowException" />
-        <item itemvalue="JUnit.DiaryRepositoryImpTest.testThatRepositorycanDeleteDiaryByUsername" />
       </list>
     </recent_temporary>
   </component>
@@ -143,7 +138,8 @@
       <option name="presentableId" value="Default" />
       <updated>1710394010238</updated>
       <workItem from="1710394011292" duration="4662000" />
-      <workItem from="1710401640473" duration="9971000" />
+      <workItem from="1710401640473" duration="15581000" />
+      <workItem from="1710488287841" duration="1172000" />
     </task>
     <servers />
   </component>
@@ -154,7 +150,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <url>file://$PROJECT_DIR$/src/dtos/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>

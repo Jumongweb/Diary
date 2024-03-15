@@ -1,2 +1,4 @@
-package services;public class DiaryServiceImp {
+package services;
+
+public class DiaryServiceImp {
 }

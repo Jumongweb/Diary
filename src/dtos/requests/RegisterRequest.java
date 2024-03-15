@@ -1,2 +1,4 @@
-package dtos.requests;public class RegisterRequest {
+package dtos.requests;
+
+public class RegisterRequest {
 }

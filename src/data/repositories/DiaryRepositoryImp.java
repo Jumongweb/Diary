@@ -1,6 +1,8 @@
 package data.repositories;
 
 import data.models.Diary;
+import exceptions.DiaryNotFoundException;
+import exceptions.UsernameExistException;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +27,7 @@ public class DiaryRepositoryImp implements DiaryRepository {
     }
 
     @Override
-    public List<Diary> findAll(Diary... diary) {
+    public List<Diary> findSome(Diary... diary) {
         List<Diary> searchedDiary = new ArrayList<>();
         for (int i = 0; i < diary.length; i++){
             if (diaries.contains(diary[i])){
@@ -34,6 +36,11 @@ public class DiaryRepositoryImp implements DiaryRepository {
         }
 
         return searchedDiary;
+    }
+
+    @Override
+    public List<Diary> findAll() {
+        return diaries;
     }
 
     @Override
