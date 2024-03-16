@@ -47,11 +47,11 @@ public class DiaryRepositoryImp implements DiaryRepository {
     public Diary findById(String username) {
         Diary foundDiary = null;
         for (Diary diary : diaries){
-            if (diary.getUsername() == username){
+            if (diary.getUsername().equals(username)){
                 foundDiary = diary;
             }
         }
-        if (foundDiary == null) throw new DiaryNotFoundException("Diary does not exit");
+        //if (foundDiary == null) throw new DiaryNotFoundException("Diary does not exit");
         return foundDiary;
     }
 

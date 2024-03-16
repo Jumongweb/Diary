@@ -1,6 +1,11 @@
 package services;
 
-public class DiaryService {
-    public static class hi {
-    }
+import dtos.requests.RegisterRequest;
+
+public interface DiaryService {
+    void register(RegisterRequest registerRequest);
+    void login();
+
+    long getNumberOfUsers();
+
 }

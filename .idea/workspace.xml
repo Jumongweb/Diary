@@ -5,17 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61bd7307-d576-4d6d-8efb-a8bb257f5d4a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/dtos/requests/RegisterRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/DiaryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/DiaryServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/EntryRepositoryImpTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/DiaryServiceImpTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/repositories/DiaryNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exceptions/DiaryNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/repositories/DiaryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repositories/DiaryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/models/Diary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/models/Diary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/models/Entry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/models/Entry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/repositories/DiaryRepositoryImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repositories/DiaryRepositoryImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/repositories/UsernameExistException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exceptions/UsernameExistException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/repositories/EntryRepositoryImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repositories/EntryRepositoryImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dtos/requests/RegisterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dtos/requests/RegisterRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/DiaryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/DiaryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/DiaryServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/DiaryServiceImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/DiaryRepositoryImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/DiaryRepositoryImpTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/EntryRepositoryImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/EntryRepositoryImpTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +33,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -42,25 +45,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/DELL/IdeaProjects/DiaryApp/src/Main.java&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "true",
+    "Repository.Attach.JavaDocs": "true",
+    "Repository.Attach.Sources": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/DELL/IdeaProjects/DiaryApp/src/Main.java",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="data.repositories" />
@@ -69,51 +73,51 @@
       <recent name="C:\Users\DELL\IdeaProjects\DiaryApp" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DiaryRepositoryImpTest">
-    <configuration name="DiaryRepositoryImpTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.EntryRepositoryImpTest.testThatUserRepositoryCanSaveEntry">
+    <configuration name="DiaryServiceImpTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DiaryApp" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DiaryRepositoryImpTest" />
+      <option name="MAIN_CLASS_NAME" value="DiaryServiceImpTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DiaryRepositoryImpTest.testDeleteRepositoryThatDoesNotExistInTheRepositoryDiaryThrowsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DiaryServiceImpTest.testAddThreeUser_NumberOfUserIsThree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DiaryApp" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DiaryRepositoryImpTest" />
-      <option name="METHOD_NAME" value="testDeleteRepositoryThatDoesNotExistInTheRepositoryDiaryThrowsException" />
+      <option name="MAIN_CLASS_NAME" value="DiaryServiceImpTest" />
+      <option name="METHOD_NAME" value="testAddThreeUser_NumberOfUserIsThree" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DiaryRepositoryImpTest.testThatIhaveRepositoryThatCanStoreDiariesAndItIsEmptyByDefault" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DiaryServiceImpTest.testThatUserServiceHasZeroNumberOfUserByDefault" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DiaryApp" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DiaryRepositoryImpTest" />
-      <option name="METHOD_NAME" value="testThatIhaveRepositoryThatCanStoreDiariesAndItIsEmptyByDefault" />
+      <option name="MAIN_CLASS_NAME" value="DiaryServiceImpTest" />
+      <option name="METHOD_NAME" value="testThatUserServiceHasZeroNumberOfUserByDefault" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DiaryRepositoryImpTest.testThatRepositoryCanFindAllDiaries" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DiaryServiceImpTest.testThatUserWithTheSameUsernameCannotBeAddedThroughRequestService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DiaryApp" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DiaryRepositoryImpTest" />
-      <option name="METHOD_NAME" value="testThatRepositoryCanFindAllDiaries" />
+      <option name="MAIN_CLASS_NAME" value="DiaryServiceImpTest" />
+      <option name="METHOD_NAME" value="testThatUserWithTheSameUsernameCannotBeAddedThroughRequestService" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DiaryRepositoryImpTest.testThatRepositoryCanFindListOfDiary" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EntryRepositoryImpTest.testThatUserRepositoryCanSaveEntry" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DiaryApp" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DiaryRepositoryImpTest" />
-      <option name="METHOD_NAME" value="testThatRepositoryCanFindListOfDiary" />
+      <option name="MAIN_CLASS_NAME" value="EntryRepositoryImpTest" />
+      <option name="METHOD_NAME" value="testThatUserRepositoryCanSaveEntry" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -121,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DiaryRepositoryImpTest" />
-        <item itemvalue="JUnit.DiaryRepositoryImpTest.testThatRepositoryCanFindAllDiaries" />
-        <item itemvalue="JUnit.DiaryRepositoryImpTest.testThatIhaveRepositoryThatCanStoreDiariesAndItIsEmptyByDefault" />
-        <item itemvalue="JUnit.DiaryRepositoryImpTest.testThatRepositoryCanFindListOfDiary" />
-        <item itemvalue="JUnit.DiaryRepositoryImpTest.testDeleteRepositoryThatDoesNotExistInTheRepositoryDiaryThrowsException" />
+        <item itemvalue="JUnit.EntryRepositoryImpTest.testThatUserRepositoryCanSaveEntry" />
+        <item itemvalue="JUnit.DiaryServiceImpTest" />
+        <item itemvalue="JUnit.DiaryServiceImpTest.testThatUserServiceHasZeroNumberOfUserByDefault" />
+        <item itemvalue="JUnit.DiaryServiceImpTest.testAddThreeUser_NumberOfUserIsThree" />
+        <item itemvalue="JUnit.DiaryServiceImpTest.testThatUserWithTheSameUsernameCannotBeAddedThroughRequestService" />
       </list>
     </recent_temporary>
   </component>
@@ -140,6 +144,7 @@
       <workItem from="1710394011292" duration="4662000" />
       <workItem from="1710401640473" duration="15581000" />
       <workItem from="1710488287841" duration="1172000" />
+      <workItem from="1710542227459" duration="14482000" />
     </task>
     <servers />
   </component>
@@ -156,5 +161,8 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/DiaryApp$EntryRepositoryImpTest_testThatUserRepositoryCanSaveEntry.ic" NAME="EntryRepositoryImpTest.testThatUserRepositoryCanSaveEntry Coverage Results" MODIFIED="1710596657180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

@@ -25,7 +25,9 @@ public class DiaryRepositoryImpTest {
     @Test
     public void testThatRepositoryCanSaveDiary(){
         DiaryRepository repository = new DiaryRepositoryImp();
-        Diary diary1 = new Diary("username", "password");
+        Diary diary1 = new Diary();
+        diary1.setUsername("username");
+        diary1.setPassword("password");
         repository.save(diary1);
         assertEquals(1l, repository.count());
     }
@@ -33,23 +35,33 @@ public class DiaryRepositoryImpTest {
     @Test
     public void testThatRepositoryThrowExceptionIfDiaryWithTheSameUsernameIsSaved(){
         DiaryRepository repository = new DiaryRepositoryImp();
-        Diary diary1 = new Diary("username", "password");
-        Diary diary2 = new Diary("username", "password");
+        Diary diary1 = new Diary();
+        Diary diary2 = new Diary();
+        diary1.setUsername("username");
+        diary1.setPassword("password");
+        diary2.setUsername("username");
+        diary2.setPassword("password");
         repository.save(diary1);
         assertThrows(UsernameExistException.class, ()->repository.save(diary2));
     }
 
     @Test
     public void testThatRepositoryCanFindDiary(){
-        Diary diary1 = new Diary("username", "password");
+        Diary diary1 = new Diary();
+        diary1.setUsername("username");
+        diary1.setPassword("password");
         repository.save(diary1);
         assertEquals(diary1, repository.findById("username"));
     }
 
     @Test
     public void testSearchForDiaryNotInRepository_RepositoryThrowException(){
-        Diary diary1 = new Diary("username1", "password");
-        Diary diary2 = new Diary("username2", "password");
+        Diary diary1 = new Diary();
+        Diary diary2 = new Diary();
+        diary1.setUsername("username1");
+        diary1.setPassword("password");
+        diary2.setUsername("username2");
+        diary2.setPassword("password");
         repository.save(diary1);
         assertThrows(DiaryNotFoundException.class, ()->repository.findById("username2"));
     }
@@ -57,9 +69,15 @@ public class DiaryRepositoryImpTest {
     @Test
     public void testThatRepositoryCanSaveThreeOrAboveDiary(){
         DiaryRepository repository = new DiaryRepositoryImp();
-        Diary diary1 = new Diary("username1", "password");
-        Diary diary2 = new Diary("username2", "password");
-        Diary diary3 = new Diary("username3", "password");
+        Diary diary1 = new Diary();
+        Diary diary2 = new Diary();
+        Diary diary3 = new Diary();
+        diary1.setUsername("username1");
+        diary1.setPassword("password");
+        diary2.setUsername("username2");
+        diary2.setPassword("password");
+        diary3.setUsername("username3");
+        diary3.setPassword("password");
 
         repository.save(diary1);
         repository.save(diary2);
@@ -69,8 +87,12 @@ public class DiaryRepositoryImpTest {
 
     @Test
     public void testThatRepositorycanDeleteDiaryByUsername(){
-        Diary diary1 = new Diary("username1", "password");
-        Diary diary2 = new Diary("username2", "password");
+        Diary diary1 = new Diary();
+        Diary diary2 = new Diary();
+        diary1.setUsername("username1");
+        diary1.setPassword("password");
+        diary2.setUsername("username2");
+        diary2.setPassword("password");
         repository.save(diary1);
         repository.save(diary2);
         assertEquals(2l, repository.count());
@@ -80,8 +102,12 @@ public class DiaryRepositoryImpTest {
 
     @Test
     public void testDeleteDiaryByUsernameThatDoesNotExistDiaryThrowException(){
-        Diary diary1 = new Diary("username1", "password");
-        Diary diary2 = new Diary("username2", "password");
+        Diary diary1 = new Diary();
+        Diary diary2 = new Diary();
+        diary1.setUsername("username1");
+        diary1.setPassword("password");
+        diary2.setUsername("username2");
+        diary2.setPassword("password");
         repository.save(diary1);
         repository.save(diary2);
         assertEquals(2l, repository.count());
@@ -93,8 +119,12 @@ public class DiaryRepositoryImpTest {
 
     @Test
     public void testThatRepositorycanDeleteDiaryByDiary(){
-        Diary diary1 = new Diary("username1", "password");
-        Diary diary2 = new Diary("username2", "password");
+        Diary diary1 = new Diary();
+        Diary diary2 = new Diary();
+        diary1.setUsername("username1");
+        diary1.setPassword("password");
+        diary2.setUsername("username2");
+        diary2.setPassword("password");
         repository.save(diary1);
         repository.save(diary2);
         assertEquals(2l, repository.count());
@@ -104,9 +134,15 @@ public class DiaryRepositoryImpTest {
 
     @Test
     public void testDeleteDiaryThatDoesNotExistInTheRepository_RepositoryThrowsException(){
-        Diary diary1 = new Diary("username1", "password");
-        Diary diary2 = new Diary("username2", "password");
-        Diary diary3 = new Diary("username3", "password");
+        Diary diary1 = new Diary();
+        Diary diary2 = new Diary();
+        Diary diary3 = new Diary();
+        diary1.setUsername("username1");
+        diary1.setPassword("password");
+        diary2.setUsername("username2");
+        diary2.setPassword("password");
+        diary3.setUsername("username3");
+        diary3.setPassword("password");
         repository.save(diary1);
         repository.save(diary2);
         assertEquals(2l, repository.count());
@@ -114,12 +150,22 @@ public class DiaryRepositoryImpTest {
     }
 
     @Test
-    public void testThatRepositoryCanFindListOfDiary(){
-        Diary diary1 = new Diary("username1", "password");
-        Diary diary2 = new Diary("username2", "password");
-        Diary diary3 = new Diary("username3", "password");
-        Diary diary4 = new Diary("username4", "password");
-        Diary diary5 = new Diary("username5", "password");
+    public void testThatRepositoryCanSomeListOfDiary(){
+        Diary diary1 = new Diary();
+        Diary diary2 = new Diary();
+        Diary diary3 = new Diary();
+        Diary diary4 = new Diary();
+        Diary diary5 = new Diary();
+        diary1.setUsername("username1");
+        diary1.setPassword("password");
+        diary2.setUsername("username2");
+        diary2.setPassword("password");
+        diary3.setUsername("username3");
+        diary3.setPassword("password");
+        diary4.setUsername("username4");
+        diary4.setPassword("password");
+        diary5.setUsername("username5");
+        diary5.setPassword("password");
         repository.save(diary1);
         repository.save(diary2);
         repository.save(diary3);
@@ -136,11 +182,21 @@ public class DiaryRepositoryImpTest {
 
     @Test
     public void testThatRepositoryCanFindAllDiaries(){
-        Diary diary1 = new Diary("username1", "password");
-        Diary diary2 = new Diary("username2", "password");
-        Diary diary3 = new Diary("username3", "password");
-        Diary diary4 = new Diary("username4", "password");
-        Diary diary5 = new Diary("username5", "password");
+        Diary diary1 = new Diary();
+        Diary diary2 = new Diary();
+        Diary diary3 = new Diary();
+        Diary diary4 = new Diary();
+        Diary diary5 = new Diary();
+        diary1.setUsername("username1");
+        diary1.setPassword("password");
+        diary2.setUsername("username2");
+        diary2.setPassword("password");
+        diary3.setUsername("username3");
+        diary3.setPassword("password");
+        diary4.setUsername("username4");
+        diary4.setPassword("password");
+        diary5.setUsername("username5");
+        diary5.setPassword("password");
         repository.save(diary1);
         repository.save(diary2);
         repository.save(diary3);
@@ -154,6 +210,7 @@ public class DiaryRepositoryImpTest {
         expectedDiaries.add(diary4);
         expectedDiaries.add(diary5);
         assertEquals(expectedDiaries, repository.findAll());
-
     }
+
+
 }

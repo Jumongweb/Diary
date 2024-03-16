@@ -5,9 +5,11 @@ import data.models.Entry;
 import java.util.List;
 
 public class EntryRepositoryImp implements EntryRepository{
+    private EntryRepository repository = new EntryRepositoryImp();
     @Override
     public Entry save(Entry entry) {
-        return null;
+        repository.save(entry);
+        return entry;
     }
 
     @Override
@@ -22,7 +24,7 @@ public class EntryRepositoryImp implements EntryRepository{
 
     @Override
     public Long count() {
-        return null;
+        return repository.count();
     }
 
     @Override
