@@ -34,7 +34,6 @@ public class DiaryRepositoryImp implements DiaryRepository {
                 searchedDiary.add(diary[i]);
             }
         }
-
         return searchedDiary;
     }
 
