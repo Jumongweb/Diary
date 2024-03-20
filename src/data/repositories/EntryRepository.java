@@ -10,4 +10,8 @@ public interface EntryRepository {
     Entry findById(int id);
     Long count();
     void delete(int id);
+    void delete(Entry entry);
+
+    void update(Entry entry);
+
 }
